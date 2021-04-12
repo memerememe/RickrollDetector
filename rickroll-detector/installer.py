@@ -16,4 +16,11 @@ def install_chrome_driver_package(link):
         zip_file.extractall('ChromeDriver')
 
 if __name__ == '__main__':
-    install_chrome_driver_package(f'https://chromedriver.storage.googleapis.com/{chrome_version}/chromedriver_win32.zip')
+    if 'Windows' in platform.system():
+        install_chrome_driver_package(f'https://chromedriver.storage.googleapis.com/{chrome_version}/chromedriver_win32.zip')
+
+    elif 'Linux' in platform.system():
+        install_chrome_driver_package(f'https://chromedriver.storage.googleapis.com/{chrome_version}/chromedriver_linux64.zip')
+
+    else:
+        install_chrome_driver_package(f'https://chromedriver.storage.googleapis.com/{chrome_version}/chromedriver_mac64.zip')
