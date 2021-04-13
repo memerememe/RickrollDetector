@@ -17,7 +17,17 @@ Git-scm
 Clone the repository to your favoured location using the command: ``` git clone https://github.com/TheProgrammingArchive/Rickroll-Detector/ ```
 The Project structure is as followed <br>
 ```
-rickroll_d
+RickrollDetector
+├── LICENSE
+├── README.md
+└── rickroll_detector
+    ├── ChromeDriver
+    │   └── chromedriver
+    ├── Chromedriver.zip
+    ├── find_identity.py
+    ├── installer.py
+    └── sources.py
+
 ```
 
 ## Options
