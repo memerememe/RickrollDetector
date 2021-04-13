@@ -27,7 +27,6 @@ RickrollDetector
     ├── find_identity.py
     ├── installer.py
     └── sources.py
-
 ```
 
 ## Options
