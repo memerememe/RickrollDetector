@@ -36,7 +36,7 @@ if __name__ == '__main__':
         elif arg_list[1] == '-u':
             usage_alert()
 
-        elif arg_list[1] == '-t' or arg_list[1] == '-c' or arg_list[1] == '-pl' or arg_list[1] == '-d' or arg_list[1] == '-od' or arg_list[1] == '-cmt' or arg_list[1] == '-dsc' or arg_list[1] == '-plv' or arg_list[1] == '-chnc':
+        elif arg_list[1] == '-t' or arg_list[1] == '-c' or arg_list[1] == '-pl' or arg_list[1] == '-d' or arg_list[1] == '-od' or arg_list[1] == '-cmt' or arg_list[1] == '-dsc' or arg_list[1] == '-plv' or arg_list[1] == '-chnc' or arg_list[1] == '-mc':
             try:
                 link_to_identify = arg_list[2]
 
@@ -64,6 +64,17 @@ if __name__ == '__main__':
 
                 tc_target.close_driver()
 
+            elif arg_list[1] == '-mc':
+                desc = tc_target.total_description().upper()
+                if 'RICK ROLL' in desc or 'RICK ASTLEY' in desc or 'NEVER GONNA GIVE YOU UP' in desc or 'NEVER GONNA GIVE YOU UP (7" MIX)' in desc:
+                    details_alert()
+
+                else:
+                    not_found_alert()
+
+                tc_target.close_driver()
+                
+            
             elif arg_list[1] == '-c':
                 copyright_ = tc_target.copyright()
 
