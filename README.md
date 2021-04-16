@@ -14,6 +14,16 @@ Requests library and selenium for python. <br />
 Git-scm
 
 ## Setup
+Install python on windows from https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe (__MAKE SURE TO CLICK ADD PYTHON TO PATH DURING INSTALLATION__)
+Install python on linux using: ```sudo apt install python3```
+Install pip on linux using: ```sudo apt install python3-pip```
+
+Install selenium using: ```pip3 install selenium``` (Linux) __or__ ```pip install selenium``` (Windows)
+Install requests using: ```pip3 install requests``` (Linux) __or__ ```pip install requests``` (Windows)
+
+If you get an output ```'dk' is not recognized as an internal or external command, operable program or batch file.``` on windows. It means python wasn't added to PATH. <br />
+Refer https://geek-university.com/python/add-python-to-the-windows-path/ on how to add python to PATH.
+
 Clone the repository to your favoured location using the command: ``` git clone https://github.com/TheProgrammingArchive/Rickroll-Detector/ ```
 
 The Folder structure should look like this <br>
@@ -63,6 +73,9 @@ You can now start using the script  <br>
 For usage refer to the USAGE section
 
 ## Options
+### find_identity.py -mc "link":
+Searches for a certain music tag in the description
+
 ### find_identity.py -c "link": 
 Searches for a certain SME tag in the video to check if it's a rickroll or not
 
@@ -107,3 +120,18 @@ Windows <br>
 ```
 C:\pathtodetector\rickroll_detector> find_identity.py -option "link"
 ```
+
+## Effective searching
+The program will take some time to produce output as it wait for all the web elements to be loaded, but waiting is much better than being rickrolled :D <br>
+It is recommended to search for certain parameters first if you feel a link is suspicious, this will help you get results faster <br>
+
+1. __find_identity.py -chnc "link"__, if it doesn't flag then move to [2].
+2. __find_identity.py -t "link"__
+3. __find_identity.py -mc "link"__
+4. __find_identity.py -c "link"__
+5. __find_identity.py -cmt "link"__
+5. __find_identity.py -pl "link"___
+6. __find_identity.py -plv "link"__
+7. __find_identity.py -dsc "link"__
+8. __find_identity.py -d "link"__
+9. __find_identity.py -od "link"__
