@@ -119,6 +119,7 @@ if __name__ == '__main__':
                 tc_target.close_driver()
 
             elif arg_list[1] == '-cmt':
+                rickroll_flag = False
                 comments_ = tc_target.comments()
 
                 if comments_ == None:
@@ -127,13 +128,13 @@ if __name__ == '__main__':
                 for comments in comments_:
                     if 'RICK ROLL' in comments.upper() or 'RICKROLL' in comments.upper() or 'RICK ASTLEY' in comments.upper():
                         details_alert()
+                        rickroll_flag = True
                         break
 
-                    else:
-                        not_found_alert()
-                        print('You can take a look at some of the comments:')
-                        print(comments_[0:15])
-                        break
+                if rickroll_flag == False:
+                    not_found_alert()
+                    print('You can take a look at some of the comments: ')
+                    print(comments_[0:15])
 
                 tc_target.close_driver()
 
