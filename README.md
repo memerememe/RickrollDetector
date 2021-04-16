@@ -15,7 +15,35 @@ Git-scm
 
 ## Setup
 Clone the repository to your favoured location using the command: ``` git clone https://github.com/TheProgrammingArchive/Rickroll-Detector/ ```
-The Project structure is as followed <br>
+
+The Folder structure should look like this <br>
+```
+RickrollDetector
+├── LICENSE
+├── README.md
+└── rickroll_detector
+    ├── find_identity.py
+    ├── installer.py
+    └── sources.py
+```
+
+Run the installer using the command ```installer.py``` (Windows) __OR__ ```python3 installer.py``` (Linux).
+
+The Folder structure should now look like this on Windows<br>
+```
+RickrollDetector
+├── LICENSE
+├── README.md
+└── rickroll_detector
+    ├── ChromeDriver
+    │   └── chromedriver.exe
+    ├── Chromedriver.zip
+    ├── find_identity.py
+    ├── installer.py
+    └── sources.py
+```
+
+Linux 
 ```
 RickrollDetector
 ├── LICENSE
@@ -28,6 +56,11 @@ RickrollDetector
     ├── installer.py
     └── sources.py
 ```
+If using linux, navigate to the ChromeDriver folder using ```cd ChromeDriver``` and execute the command ```chmod +x chromedriver```, this will set chromedriver as an executable <br>
+__If this isn't done then the find_identity.py will fail on running__
+
+You can now start using the script  <br>
+For usage refer to the USAGE section
 
 ## Options
 ### find_identity.py -c "link": 
