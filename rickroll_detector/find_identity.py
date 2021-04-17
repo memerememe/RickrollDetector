@@ -2,12 +2,25 @@ from sources import IdentifyLink
 import sys
 import webbrowser
 
+def argument_list():
+    print('Available arguments: ')
+    print('-chnc "link" -> Checks for channel name')
+    print('-t "link" -> Checks for title')
+    print('-mc "link" -> Checks for the music used in the video')
+    print('-c "link" -> Checks for the SME (suggested from video) in the video')
+    print('-cmt "link" -> Checks for the comments in the video')
+    print('-pl "link" -> Checks for the playlist name if the video is located inside a playlist')
+    print('-plv "link" -> Prints all the videos inside the playlist under which the video is located if one is found')
+    print('-dsc "link" -> Prints the entire video description')
+    print('-d "link" -> Prints video details')
+    print('-od "link" -> Prints channel details')
+
 def usage_alert():
     print('Usage: link_identifier.py -option "link"')
 
 def help_():
     usage_alert()
-    webbrowser.open('README.md')
+    argument_list()
 
 def link_alert():
     print('Link must be a valid youtube link')
@@ -164,3 +177,4 @@ if __name__ == '__main__':
 
         else:
             usage_alert()
+            argument_list()
