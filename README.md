@@ -73,10 +73,8 @@ You can now start using the script  <br>
 For usage refer to the USAGE section
 
 ## Usage
-__PROVIDED LINK MUST CONTAIN HTTPS AND BE PROVIDED IN QUOTES__<br>
-__for example "https://www.youtube.com/watch?v=dQw4w9WgXcQ" OR "https://shorturl.at/lnBNU" OR  "https://bit.ly/3mUuDXA"
-
-
+__PROVIDED LINK MUST CONTAIN HTTPS AND BE PROVIDED IN QUOTES<br>
+"https://www.youtube.com/watch?v=dQw4w9WgXcQ" OR "https://shorturl.at/lnBNU" OR  "https://bit.ly/3mUuDXA"__
 
 Linux <br>
 ```
