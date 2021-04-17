@@ -72,6 +72,22 @@ __If this isn't done then the find_identity.py will fail on running__
 You can now start using the script  <br>
 For usage refer to the USAGE section
 
+## Usage
+__PROVIDED LINK MUST CONTAIN HTTPS AND BE PROVIDED IN QUOTES__<br>
+__for example "https://www.youtube.com/watch?v=dQw4w9WgXcQ" OR "https://shorturl.at/lnBNU" OR  "https://bit.ly/3mUuDXA"
+
+
+
+Linux <br>
+```
+ubuntu@yt:~/rickroll-detector/rickroll-detector$ python3 find_identity.py -option "link"
+```
+
+Windows <br>
+```
+C:\pathtodetector\rickroll_detector> find_identity.py -option "link"
+```
+
 ## Options
 ### find_identity.py -mc "link":
 Searches for a certain music tag in the description
@@ -109,17 +125,6 @@ Prints the name of the channel and subscriber count
 
 ### find_identity.py -chnc "link"
 Searches for the name of certain flagged channels and alerts the user if the link is a rickroll
-
-## Usage
-Linux <br>
-```
-ubuntu@yt:~/rickroll-detector/rickroll-detector$ python3 find_identity.py -option "link"
-```
-
-Windows <br>
-```
-C:\pathtodetector\rickroll_detector> find_identity.py -option "link"
-```
 
 ## Effective searching
 The program will take some time to produce output as it wait for all the web elements to be loaded, but waiting is much better than being rickrolled :D <br>
