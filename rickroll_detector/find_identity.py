@@ -3,7 +3,7 @@ import sys
 import webbrowser
 
 def usage_alert():
-    print('Usage: link_identifier.py -option link/query')
+    print('Usage: link_identifier.py -option "link"')
 
 def help_():
     usage_alert()
