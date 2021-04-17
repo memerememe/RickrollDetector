@@ -74,7 +74,7 @@ For usage refer to the USAGE section
 
 ## Usage
 __PROVIDED LINK MUST CONTAIN HTTPS AND BE PROVIDED IN QUOTES<br>
-"https://www.youtube.com/watch?v=dQw4w9WgXcQ" OR "https://shorturl.at/lnBNU" OR  "https://bit.ly/3mUuDXA"__
+"https://www.youtube.com/watch?v=dQw4w9WgXcQ" OR "https://shorturl.at/lnBNU" OR  "https://bit.ly/3mUuDXA"__ (___THESE ARE RICKROLL LINKS DON'T TRY THEM__)
 
 Linux <br>
 ```
