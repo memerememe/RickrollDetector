@@ -14,12 +14,12 @@ Requests library and selenium for python. <br />
 Git-scm
 
 ## Setup
-Install python on windows from https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe (__MAKE SURE TO CLICK ADD PYTHON TO PATH DURING INSTALLATION__)
-Install python on linux using: ```sudo apt install python3```
-Install pip on linux using: ```sudo apt install python3-pip```
+Install python on windows from https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe (__MAKE SURE TO CLICK ADD PYTHON TO PATH DURING INSTALLATION__)<br>
+Install python on linux using: ```sudo apt install python3```<br>
+Install pip on linux using: ```sudo apt install python3-pip```<br>
 
-Install selenium using: ```pip3 install selenium``` (Linux) __or__ ```pip install selenium``` (Windows)
-Install requests using: ```pip3 install requests``` (Linux) __or__ ```pip install requests``` (Windows)
+Install selenium using: ```pip3 install selenium``` (Linux) __or__ ```pip install selenium``` (Windows)<br>
+Install requests using: ```pip3 install requests``` (Linux) __or__ ```pip install requests``` (Windows)<br>
 
 If you get an output ```'dk' is not recognized as an internal or external command, operable program or batch file.``` on windows. It means python wasn't added to PATH. <br />
 Refer https://geek-university.com/python/add-python-to-the-windows-path/ on how to add python to PATH.
